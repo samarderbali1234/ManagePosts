@@ -25,6 +25,27 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '2155048141556439', // Remplacez par votre ID d'application
+          cookie     : true,
+          xfbml      : true,
+          version    : 'v21.0' // Version de l'API que vous utilisez
+        });
+      };
+    
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+ <!-- Intégration  SDK Facebook pour permettre la connexion avec un compte Facebook.-->
+    <!-- <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

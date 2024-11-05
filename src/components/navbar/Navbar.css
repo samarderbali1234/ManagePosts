@@ -1,0 +1,99 @@
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: hsl(221, 48%, 58%);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.navbar-logo h1 {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+}
+
+/* Buttons and Greeting */
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-buttons span {
+    font-size: 16px; /* Default font size for greeting */
+    margin-right: 10px; /* Space between greeting and button */
+}
+
+.btn {
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px; /* Space between buttons */
+}
+
+.btn:hover {
+    background-color: #365899;
+}
+
+.logout {
+    background-color: #e7e7e7;
+    color: #333;
+}
+
+.logout:hover {
+    background-color: #d4d4d4;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) { /* Tablet */
+    .navbar {
+        padding: 8px 16px; /* Reduce navbar padding */
+    }
+
+    .navbar-logo h1 {
+        font-size: 20px; /* Reduce font size slightly */
+    }
+
+    .navbar-buttons span {
+        font-size: 14px; /* Smaller font for greeting */
+        margin-right: 5px; /* Reduce spacing */
+    }
+
+    .btn {
+        padding: 8px 12px; /* Smaller button padding */
+        margin-left: 5px; /* Reduce button spacing */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 768px) { /* Mobile */
+    .navbar {
+        padding: 6px 12px; /* Further reduce navbar padding */
+    }
+
+    .navbar-logo h1 {
+        font-size: 18px; /* Further reduce logo font size */
+    }
+
+    .navbar-buttons span {
+        font-size: 12px; /* Smaller font for greeting on mobile */
+        margin-right: 5px;
+    }
+
+    .btn {
+        padding: 6px 10px; /* Small button padding for mobile */
+        margin-left: 5px; /* Small space between buttons */
+        font-size: 12px; /* Smaller button font size */
+    }
+}

@@ -1,0 +1,77 @@
+.new-post-form {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f0f2f5;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    margin-top: 70px;
+}
+
+.new-post-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-post-form textarea,
+.new-post-form input[type="text"],
+.new-post-form input[type="file"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+}
+
+.new-post-form button {
+    background-color: #4267B2;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.new-post-form button:hover {
+    background-color: #365899;
+}
+
+.new-post-form p.status-message {
+    color: rgb(43, 146, 187);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.new-post-form .form-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espace entre les icônes et les champs */
+}
+
+.new-post-form textarea,
+.new-post-form input[type="text"] {
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .new-post-form {
+        margin-top: 60px;
+        padding: 15px;
+    }
+
+    .new-post-form .form-row {
+        flex-direction: column;
+    }
+
+    .new-post-form textarea,
+    .new-post-form input[type="text"],
+    .new-post-form input[type="file"],
+    .new-post-form button {
+        width: 100%; /* Utilise toute la largeur pour chaque élément */
+        margin-top: 10px; /* Espace entre chaque élément sur mobile */
+    }
+}
